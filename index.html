@@ -11,60 +11,91 @@
     <meta name="og:image" content="" property="og:image">
     <link rel="icon" href="10-2-anime-png-images_32x32.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <body>
-    <div id="main" class="is-loading">
-        <h1>
-            Isekai 異世界
-        </h1>
-
-        <h3>
-            <div id="contract">
-                <b><a href="https://bscscan.com/token/0x3c9bd179b33a19e5388d1eb8a530c4027e5937ce" target="_blank">0x3c9bd179b33a19e5388d1eb8a530c4027e5937ce</a></b>
-            </div>
-            <button class="pancake-btn cybr-btn">
-                Buy on Pancakeswap<span aria-hidden>_</span>
-                <span aria-hidden class="cybr-btn__glitch">Pancake</span>
-                <span aria-hidden class="cybr-btn__tag"></span>
-              </button>
-              <button class="bakery-btn cybr-btn">
-                Buy on Bakery<span aria-hidden>_</span>
-                <span aria-hidden class="cybr-btn__glitch">Bakery</span>
-                <span aria-hidden class="cybr-btn__tag"></span>
-              </button>
-        </h3>
+    <div class="landing-header">
+          <div id="main" class="is-loading">
+          <h1>
+              Isekai 異世界
+          </h1>
+          <h3>
+              <div id="contract">
+                  <b><a href="https://bscscan.com/token/0x3c9bd179b33a19e5388d1eb8a530c4027e5937ce" target="_blank">0x3c9bd179b33a19e5388d1eb8a530c4027e5937ce</a></b>
+              </div>
+              <button class="pancake-btn cybr-btn" style="z-index: 5">
+                  Buy on Pancakeswap<span aria-hidden>_</span>
+                  <span aria-hidden class="cybr-btn__glitch">Pancake</span>
+                  <span aria-hidden class="cybr-btn__tag"></span>
+                </button>
+                <button class="bakery-btn cybr-btn" style="z-index: 5">
+                  Buy on Bakery<span aria-hidden>_</span>
+                  <span aria-hidden class="cybr-btn__glitch">Bakery</span>
+                  <span aria-hidden class="cybr-btn__tag"></span>
+                </button>
+          </h3>
+        <div id="info">
+          Original Supply:
+          1,000,000
+          |
+          Burned Tokens:
+          110,000
+          |
+          Deflationary
+      </div>
+      <div id="social-media" style="z-index: 5">
+        <a href="https://t.me/isekaidefi"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:isekaidefi@admin.com"><i class="fas fa-envelope"></i></a>
+      </div> 
+      </div> 
     </div>
-    <div id="info">
-        Original Supply:
-        1,000,000
-        |
-        Burned Tokens:
-        100,000
-        |
-        Deflationary
+    
+    <div id="roadmap">
+      <div id="roadmap-content">
+        <h1>Roadmap</h1>
+      <div id="roadmap-table">
+        <h2>Q2</h2>  
+          <li>Coinmarketcap tracking</li>
+          <li>Coingecko tracking</li>
+          <li>Coinpaprika tracking</li>
+          <li>Website Development and Refactoring</li>
+          <li>Build Social media presence</li>
+          <li>NFT Minter & Web Server</li>
+          <li>Marketing Campaign</li>
+          <li>Yield Farming & Staking</li>
+        <h2>Q3</h2>
+          <li>Partnerships with Non-Profit Organizations</li>
+          <li>Coin audit</li>
+          <li>Airdrops to loyal users</li>
+          <li>Hire developers to build dapps</li>
+          <li>Open source Token Incubator</li>
+      </div>
     </div>
-    <div id="coming-soon">
-        - <br>
-        Coming soon
-    </div>
+      </div>
+      
   </body>
   <style>
       body {
         color: #fff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
+            "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+        margin: 0;
+      }
+
+      .landing-header {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) 100%, transparent),
             url(isekai.jpg);
+        background-repeat: no-repeat;
         background-size: cover, cover;
         background-position: center, center;
         height: 100vh;
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
-            "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
-        }
+        position: relative;
+        color: white !important;
+      }
         
         #contract {
             text-align: center;
@@ -73,18 +104,11 @@
             text-decoration: underline;
             color: white;
             word-break: break-word;
+            z-index: 2;
         }
 
         a:visited {
             color: white;
-        }
-
-        .pancake-btn {
-
-        }
-
-        .bakery-btn {
-
         }
 
         h1 {
@@ -131,11 +155,32 @@
         }
 
         #main {
+            margin-top: 20%;
             text-align: center;
+            height: 100vh;
         }
 
-        #coming-soon {
+        #roadmap {
+          text-align: center;
+          background-color: azure;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) 100%, transparent),
+          url(isekai-2.png);
+          height: 101vh;
+        }
+
+        #roadmap-content {
+          margin-top: 12%;
+        }
+
+        #social-media {
+            margin-top: 10px;
             text-align: center;
+            z-index: 2;
+        }
+
+        i {
+              font-size: 24px;
+              margin-right: 15px;
         }
 
         #info {
@@ -248,6 +293,10 @@
   z-index: -1;
 }
 
+.fa-envelope {
+  color: white;
+}
+
 @keyframes glitch {
   0% {
     clip-path: var(--clip-one);
@@ -311,6 +360,11 @@
 
 .cybr-btn:nth-of-type(2) {
   --primary-hue: 260;
+}
+
+#footer {
+  padding: 100px;
+  background: white;
 }
   </style>
   <script>
